@@ -4,7 +4,7 @@ Python based resume screening tool allowing users to sort the skills on the basi
 ## Installation and Setup
 First obtain this project
 ```bash
-git clone https://github.com/powercomp750/SkillSort.git
+git clone https://github.com/metaversecode/SkillSort.git
 ```
 
 Move to project directory
@@ -17,4 +17,23 @@ Execute the project
 python aa.py
 ```
 
+## In case of any module/package errors, kindly install the following libraries in your system:
+Install `pandas`
+```bash
+pip install pandas
+```
 
+Install `matplotlib`
+```bash
+pip install matplotlib
+```
+
+Install `seaborn`
+```bash
+pip install seaborn
+```
+
+Install `scikit-learn`
+```bash
+pip install scikit-learn
+```
