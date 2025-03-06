@@ -6,3 +6,15 @@ First obtain this project
 ```bash
 git clone https://github.com/powercomp750/SkillSort.git
 ```
+
+Move to project directory
+```bash
+cd SkillSort
+```
+
+Execute the project
+```python
+python aa.py
+```
+
+
