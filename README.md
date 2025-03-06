@@ -12,31 +12,13 @@ git clone https://github.com/metaversecode/SkillSort.git
 cd SkillSort
 ```
 
+- Install the required packages
+```bash
+pip install -r requirements.txt
+```
+
 - Execute the project
 ```python
 python aa.py
 ```
 
-> [!Warning]
-> Incase if this application doesn't and displays module 
-
-## In case of any module/package errors, kindly install the following libraries in your system:
-Install `pandas`
-```bash
-pip install pandas
-```
-
-Install `matplotlib`
-```bash
-pip install matplotlib
-```
-
-Install `seaborn`
-```bash
-pip install seaborn
-```
-
-Install `scikit-learn`
-```bash
-pip install scikit-learn
-```
