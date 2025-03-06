@@ -13,13 +13,13 @@ resume_df = pd.read_csv('Resume.csv', encoding='utf-8')
 def clean_text(text):
     if isinstance(text, str):
         text = text.lower()
-        text = re.sub(r'http\S+\s*', ' ', text)  # Use raw string (r'...')
+        text = re.sub(r'http\S+\s*', ' ', text) 
         text = re.sub(r'RT|cc', ' ', text)
         text = re.sub(r'#\S+', '', text)
         text = re.sub(r'@\S+', ' ', text)
         text = re.sub(r'[%s]' % re.escape(string.punctuation), ' ', text)
         text = re.sub(r'[^\x00-\x7f]', r' ', text)
-        text = re.sub(r'\s+', ' ', text)  # Use raw string (r'\s+')
+        text = re.sub(r'\s+', ' ', text)
         return text.strip()
     return ""
 
