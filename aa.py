@@ -27,7 +27,7 @@ def clean_text(text):
 resume_df['cleaned_resume'] = resume_df['Resume_str'].apply(clean_text)
 
 # ------------------------------
-# Pie Chart: Resume Category Distribution
+# Pie Chart: Resume Category Distributions
 # ------------------------------
 if 'Category' in resume_df.columns:
     category_counts = resume_df['Category'].value_counts()
