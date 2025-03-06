@@ -22,3 +22,9 @@ pip install -r requirements.txt
 python aa.py
 ```
 
+## ✨ Features
+- Works offline, internet connectivity is only required for modules installation.
+- Added pie chart visualization
+- Using traditional learning, application will display the total skillsets from given resume.
+- Export the result with given rank range.
+
