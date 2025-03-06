@@ -10,19 +10,19 @@ from sklearn.metrics.pairwise import cosine_similarity
 # Load Dataset
 resume_df = pd.read_csv('Resume.csv', encoding='utf-8')
 
-# Cleaning Function: lowercases and removes unwanted characters
 def clean_text(text):
     if isinstance(text, str):
         text = text.lower()
-        text = re.sub('http\S+\s*', ' ', text)  # Remove URLs
-        text = re.sub('RT|cc', ' ', text)        # Remove RT and cc
-        text = re.sub('#\S+', '', text)          # Remove hashtags
-        text = re.sub('@\S+', ' ', text)          # Remove mentions
-        text = re.sub('[%s]' % re.escape(string.punctuation), ' ', text)  # Remove punctuation
-        text = re.sub(r'[^\x00-\x7f]', r' ', text)  # Remove non-ASCII
-        text = re.sub('\s+', ' ', text)  # Remove extra whitespace
+        text = re.sub(r'http\S+\s*', ' ', text) 
+        text = re.sub(r'RT|cc', ' ', text)
+        text = re.sub(r'#\S+', '', text)
+        text = re.sub(r'@\S+', ' ', text)
+        text = re.sub(r'[%s]' % re.escape(string.punctuation), ' ', text)
+        text = re.sub(r'[^\x00-\x7f]', r' ', text)
+        text = re.sub(r'\s+', ' ', text)
         return text.strip()
     return ""
+
 
 # Apply cleaning to resume text (using the 'Resume_str' column)
 resume_df['cleaned_resume'] = resume_df['Resume_str'].apply(clean_text)
