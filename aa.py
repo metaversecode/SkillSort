@@ -14,13 +14,13 @@ resume_df = pd.read_csv('Resume.csv', encoding='utf-8')
 def clean_text(text):
     if isinstance(text, str):
         text = text.lower()
-        text = re.sub('http\S+\s*', ' ', text)  # Remove URLs
-        text = re.sub('RT|cc', ' ', text)        # Remove RT and cc
-        text = re.sub('#\S+', '', text)          # Remove hashtags
-        text = re.sub('@\S+', ' ', text)          # Remove mentions
-        text = re.sub('[%s]' % re.escape(string.punctuation), ' ', text)  # Remove punctuation
-        text = re.sub(r'[^\x00-\x7f]', r' ', text)  # Remove non-ASCII
-        text = re.sub('\s+', ' ', text)  # Remove extra whitespace
+        text = re.sub('http\S+\s*', ' ', text)
+        text = re.sub('RT|cc', ' ', text) 
+        text = re.sub('#\S+', '', text)    
+        text = re.sub('@\S+', ' ', text)  
+        text = re.sub('[%s]' % re.escape(string.punctuation), ' ', text)  
+        text = re.sub(r'[^\x00-\x7f]', r' ', text)  
+        text = re.sub('\s+', ' ', text)  
         return text.strip()
     return ""
 
