@@ -1,21 +1,24 @@
 # SkillSort
 Python based resume screening tool allowing users to sort the skills on the basis of submitted resumes of different candidates. This tool displays results in bar graph allowing for recuriters to easily visualize the generated data.
 
-## Installation and Setup
-First obtain this project
+## 📥Installation and Setup
+- First obtain this project
 ```bash
 git clone https://github.com/metaversecode/SkillSort.git
 ```
 
-Move to project directory
+- Move to project directory
 ```bash
 cd SkillSort
 ```
 
-Execute the project
+- Execute the project
 ```python
 python aa.py
 ```
+
+> [!Warning]
+> Incase if this application doesn't and displays module 
 
 ## In case of any module/package errors, kindly install the following libraries in your system:
 Install `pandas`
