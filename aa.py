@@ -23,9 +23,23 @@ def clean_text(text):
         return text.strip()
     return ""
 
-
 # Apply cleaning to resume text (using the 'Resume_str' column)
 resume_df['cleaned_resume'] = resume_df['Resume_str'].apply(clean_text)
+
+# ------------------------------
+# Pie Chart: Resume Category Distribution
+# ------------------------------
+if 'Category' in resume_df.columns:
+    category_counts = resume_df['Category'].value_counts()
+    plt.figure(figsize=(8,8))
+    plt.pie(category_counts, labels=category_counts.index, autopct='%1.1f%%', startangle=140)
+    plt.title("Resume Category Distribution")
+    plt.axis('equal')
+    plt.show()
+
+# ------------------------------
+# Skill-based Candidate Matching & Ranking
+# ------------------------------
 
 # Get user input for the skill
 skill_query = input("Enter the skill you are looking for: ").strip().lower()
