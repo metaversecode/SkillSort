@@ -88,7 +88,7 @@ else:
             f.write("-" * 80 + "\n")
     print("\nRanked candidate details have been written to 'ranked_candidates.txt'.")
 
-    # Bar Graph: Plot the top 10 candidates
+    # Bar Graph: Plot the top 10 candidates, increase also
     plot_data = top_candidates.head(10)
     plt.figure(figsize=(12, 6))
     sns.barplot(x='Match_Score', y=plot_data['ID'].astype(str), data=plot_data, palette='viridis')
