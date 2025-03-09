@@ -38,7 +38,7 @@ if 'Category' in resume_df.columns:
     plt.show()
 
 # ------------------------------
-# Skill-based Candidate Matching & Ranking
+# Skill-based Candidate Matching & Rankings
 # ------------------------------
 
 # Get user input for the skill
