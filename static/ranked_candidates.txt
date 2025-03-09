@@ -1,0 +1,36 @@
+Rank: 1, ID: 83816738, Score: 0.2035
+Resume Excerpt:          INFORMATION TECHNOLOGY INTERN (TEST AUTOMATION ENGINEER)       Summary      Over 3 years of experience serving as a key contributor across all software development life cycle phases including...
+
+Rank: 2, ID: 85101052, Score: 0.1683
+Resume Excerpt:          TECHNICAL DESIGNER           Career Overview     
+
+●  Having 8.5 years
+of IT experience as Software developer in Java/J2EE Technologies  
+
+●  At present
+Technical Designer at Tata Consultancy...
+
+Rank: 3, ID: 33141415, Score: 0.1611
+Resume Excerpt:          CONSTRUCTION WORKER       Objective      WEB DEVELOPER    Recent graduate and highly motivated 15 year veteran of the construction industry looking to build a new career in the web developmen...
+
+Rank: 4, ID: 21038022, Score: 0.1482
+Resume Excerpt:          CORPORATE PROCESS/SYSTEMS ENGINEERING MANAGER           Executive Summary     High-energy Engineering Manager driven to cut company costs and boost company revenue through innovative manageme...
+
+Rank: 5, ID: 23464505, Score: 0.1318
+Resume Excerpt:          JAVA INTERN       Career Overview     Developer well-versed in structuring, developing and implementing interactive websites.  with experience in back-end programming, relational databases an...
+
+Rank: 6, ID: 28505854, Score: 0.1271
+Resume Excerpt:          ENGINEERING MANAGER           Summary    To design, develop and manage products in the field of consumer electronics devices, networking protocols, internet applications and connected devices...
+
+Rank: 7, ID: 29196643, Score: 0.0945
+Resume Excerpt:          CONSULTANT       Summary    Media Planner and Media Buyer roles handled in the adverstising industry with a total work experience of 4+ years. Excellent knowledge in the Media agency analytic...
+
+Rank: 8, ID: 22351830, Score: 0.0926
+Resume Excerpt:          CONSULTANT           Summary    7 years of professional IT experience with Masters degree in computer applications; worked mainly with Java (JEE) programming languages. Passionate about Clean...
+
+Rank: 9, ID: 10641230, Score: 0.0847
+Resume Excerpt:          IT MANAGEMENT           Career Overview    Detail-oriented professional with extensive Information Technology experience in hardware and software troubleshooting/management. With additional e...
+
+Rank: 10, ID: 14871762, Score: 0.0751
+Resume Excerpt:          BUSINESS DEVELOPMENT EXECUTIVE       Summary    Process oriented Data Analyst and Delivery Lead with 5+ years proven track record of analyzing Business Intelligence to increase top line and b...
+

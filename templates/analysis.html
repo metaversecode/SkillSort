@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='analysis.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <header id = "hh1">
+        <h1>Resume Screening Tool</h1>
+    </header>
+    <div id="container">
+        <div id="first">
+            <button id = "btn1">Analysis Resume</button>
+            <span id = "loader" class="loader"></span>
+        </div>
+        <div hidden id="second">
+            <div id = "card1">
+            <h2>Resume Category Distribution</h2>
+            <div class = "pieChart" id="pieChart"></div>
+            </div>
+            <div id = "card2">
+            <h2>Search by Skill</h2>
+            <div id = "search1">
+            <input type="text" id="s1" placeholder="Enter a skill (e.g., JS dev)" />
+            <div id = "dd">
+            <span id = "ss1" class="material-symbols-outlined">
+                search
+                </span>
+                </div>
+                </div>
+                <span id = "loader1" class="loader"></span>
+                <div id = "grp2">
+                    <h1 id = "h11">Bar Graph Area</h1>
+                </div>
+                <div hidden id = "grp1">
+                <p id = "p1">Resume ID</p>
+            <div class = "barChart" id="barChart"></div>
+            </div>
+            </div>
+        </div>
+        <div id = "third">
+            <button id = "btn3">Download</button>
+        </div>
+        <div id = "footer">
+            <p id = "copy">© Build By Suraj</p>
+            </div>
+        <script src="{{ url_for('static', filename='analysis.js') }}"></script>
+    </body>
+</html>

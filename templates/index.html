@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Skill Matcher</title>
+  <!-- Include ApexCharts via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+  <h1>Resume Skill Matcher</h1>
+
+  <!-- Section for Pie Chart -->
+  <h2>Resume Category Distribution</h2>
+  <div id="pieChart"></div>
+
+  <!-- Section for Skill Search -->
+  <h2>Search by Skill</h2>
+  <input type="text" id="skillInput" placeholder="Enter a skill (e.g., Java)" />
+  <button onclick="searchSkill()">Search</button>
+
+  <!-- Div for Candidate Ranking Bar Chart -->
+  <h2>Top Candidate Rankings</h2>
+  <div id="barChart"></div>
+
+  <script>
+    // Fetch and render the pie chart data
+    fetch('/api/category_distribution')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        var options = {
+      series: data.values, // Category values
+      chart: {
+        type: 'polarArea',
+        width:  600,  // Set custom width
+        height: 600  
+      },
+      labels: data.labels, // Add category labels
+      stroke: {
+        colors: ['#fff']
+      },
+      fill: {
+        opacity: 0.8
+      },
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 10
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+    };
+          var pieChart = new ApexCharts(document.querySelector("#pieChart"), options);
+          pieChart.render();
+      });
+
+    // Function to search for a skill and render the bar chart
+    function searchSkill() {
+      var skill = document.getElementById("skillInput").value;
+      if(!skill) {
+        alert("Please enter a skill");
+        return;
+      }
+      fetch('/api/candidate_rankings?skill=' + encodeURIComponent(skill))
+      .then(response => response.json())
+        .then(results => {
+          // Prepare data for bar chart (candidate IDs and match scores)
+          var candidateIDs = results.map(r => String(r.ID));
+          console.log(candidateIDs)
+          var matchScores = results.map(r => r.Match_Score);
+
+          var options = {
+          series: [{
+          data: matchScores
+        }],
+          chart: {
+          type: 'bar',
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            borderRadiusApplication: 'end',
+            horizontal: true,
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        xaxis: {
+          title: {
+      text: 'Score'
+    },
+          categories: candidateIDs,
+          labels: {
+        formatter: (value) => {
+          return value.toFixed(1)
+        },
+      }
+        }
+        };
+
+          var barChart = new ApexCharts(document.querySelector("#barChart"), options);
+          barChart.render();
+        });
+    }
+  </script>
+</body>
+</html>
