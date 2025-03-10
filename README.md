@@ -27,5 +27,6 @@ python aa.py
 - Added pie chart visualization
 - Using traditional learning, application will display the total skillsets from given resume.
 - Export the result with given rank range.
-- Sexy Ui implementation 
+- Sexy Ui implementation
+- Download
 
