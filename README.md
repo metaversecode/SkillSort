@@ -28,6 +28,8 @@ python aa.py
 - Using traditional learning, application will display the total skillsets from given resume.
 - Export the result with given rank range.
 - Sexy Ui implementation
-Changelog - 
+
+## Changelog - 
 - Download button fixed
+- Graph Fixed
 
