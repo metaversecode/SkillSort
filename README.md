@@ -31,5 +31,5 @@ python aa.py
 
 ## Changelog - 
 - Download button fixed
-- Graph Fixed
+- Graph Issue Fixed
 
